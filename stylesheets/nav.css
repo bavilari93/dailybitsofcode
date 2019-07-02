@@ -150,7 +150,7 @@ a {
     margin-top:5rem;
    }
    .challenge-header h1{
-    font-size: large;
+    font-size: x-large;
    }
    .why div:nth-child(2){
         width: min-content !@important;;
@@ -203,7 +203,7 @@ h3 span{
     width: 100vw;
     height: 30rem;
         overflow: hidden;
-        margin-bottom: 15rem;
+        margin-bottom: 20rem;
 
 }
 .why>div{
@@ -245,8 +245,14 @@ background-repeat: no-repeat;
  font-size: xx-large;
 }
 
+/* ==========================================================================
+        Challenge
+   ========================================================================== */
+
 .challenge-header{
 text-align: center;
+position: relative;
+z-index: 99;
 }
 #challenge{
 
@@ -275,4 +281,27 @@ text-align: center;
     margin-top: 2rem;
     border-radius: 10px;
     font-size: 1.5em;
+}
+
+
+/* ==========================================================================
+       Join Section
+   ========================================================================== */
+.join{
+    height: 40rem;
+    background: black;
+    color: white;
+    padding-top: 15rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.join:before{
+    content: '';
+    position: absolute;
+    height: 20rem;
+    width: 100vw;
+    background-color: white;
+    transform: skewY(5deg);
+    margin-top: -30rem;
 }
