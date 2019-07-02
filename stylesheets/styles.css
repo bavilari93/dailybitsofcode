@@ -1,0 +1,387 @@
+/*! site styles */
+/*
+	Breakpoints
+	s-tab:   25em / 400px 
+	l-tab:   43.75em / 700px
+	desk:    56.25em / 900px
+	m-desk:  71.875em / 1150px
+	l-desk:  81.25em / 1300px
+
+MQ Block:
+
+@media only screen and (min-width: 25em) {
+    
+}
+
+@media only screen and (min-width: 43.75em) {
+    
+}
+
+@media only screen and (min-width: 56.25em) {
+    
+}
+
+@media only screen and (min-width: 81.25em) {
+    
+}
+
+Colors:
+
+Orange: #DC5705;
+Lightest Blue: #B7D0E8;
+Light Blue: #8BB1DD;
+Blue: #4A90E2;
+Dark Blue: #35475B;
+
+Gray: #494949;
+
+Fonts: 
+
+Serif: "Alegreya", Georgia, "New Times Roman", serif;
+Sans-serif: "Alegreya Sans", Helvetica, Arial, sans-serif;
+
+
+*/
+
+/* ==========================================================================
+   HTML Elements
+   ========================================================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body, 
+p, 
+th, 
+td, 
+ul, 
+li {
+	font-family: "Alegreya", Georgia, "New Times Roman", serif;
+}
+
+h1 {
+	color: #35475B;
+	font-family: "Alegreya", Georgia, "New Times Roman", serif;
+	font-size: 3em;
+	font-weight: 900;
+}
+
+h2 {
+	font-family: "Alegreya", Georgia, "New Times Roman", serif;
+}
+
+h3 {
+	font-family: "Alegreya", Georgia, "New Times Roman", serif;
+}
+
+h4 {
+	font-family: "Alegreya", Georgia, "New Times Roman", serif;
+}
+
+h5 {
+	font-family: "Alegreya", Georgia, "New Times Roman", serif;
+}
+
+h6 {
+	font-family: "Alegreya", Georgia, "New Times Roman", serif;
+	text-transform: uppercase;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+img {
+	height: auto;
+	margin: 0;
+	max-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+/* ==========================================================================
+   Responsive Typography
+   ========================================================================== */
+
+p, h1, h2, h3, h4, h5, h6 {
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-transition: font-size linear 0.15s;
+	-moz-transition: font-size linear 0.15s;
+	transition: font-size linear 0.15s; 	
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.4375;
+	max-width: 43em;
+}
+.wf-inactive p {
+	font-family: Georgia, "New Times Roman", serif;
+	font-size: 0.975em;
+	letter-spacing: -0.4px;
+	line-height: 1.5;
+}
+	@media only screen and (min-width: 81.25em) {
+	    p {
+		    font-size: 1.125em;
+		    line-height: 1.5;
+		}
+	    .wf-inactive p {
+		    font-size: 1.095em;
+		    letter-spacing: -0.4px;
+		    line-height: 1.55;
+		}
+	}
+
+h1 {
+	font-size: 2em;
+	line-height: 1.25;
+	margin-top: 0.5em;
+	margin-bottom: 0.25em;
+}
+.wf-inactive h1 {
+	font-family: "New Times Roman", serif;
+	font-size: 2em;
+	font-weight: bold;
+	line-height: 1.25
+}
+	@media only screen and (min-width: 25em) {
+	    h1 {
+		    font-size: 2.25em;
+		    line-height: 1.25;
+		}
+		.wf-inactive h1 {
+			font-size: 2em;
+			line-height: 1.25; 
+			letter-spacing: -1px;
+			margin-top: 0.65em;
+		}
+	}
+	
+	@media only screen and (min-width: 43.75em) {
+	    h1 { 
+		    font-size: 2.5em;
+		    line-height: 1.125;
+		}
+		.wf-inactive h1 {
+			font-size: 2.4em;
+			margin-top: 0.5em;
+		}
+	}
+	
+	@media only screen and (min-width: 56.25em) {
+	    h1 { 
+	    	font-size: 3em;
+		    line-height: 1.125;
+	    }
+		.wf-inactive h1 {
+			font-size: 2.9em;
+			margin-top: 0.45em;
+		}
+	}
+	
+	@media only screen and (min-width: 81.25em) {
+	    h1 { 
+	    	font-size: 4em;
+		    line-height: 1.125;
+	    }
+		.wf-inactive h1 {
+			font-size: 3.9em;
+			letter-spacing: -2px;
+			margin-top: 0.45em;
+		}
+	}
+
+h2 {
+	font-size: 1.625em;
+	line-height: 1.125;
+	margin-top: 0.5em;
+	margin-bottom: 0.125em;
+}
+	@media only screen and (min-width: 25em) {
+	    h2 {
+		    font-size: 1.75em;
+		    line-height: 1.125;
+		}
+	}
+	
+	@media only screen and (min-width: 43.75em) {
+	    h2 { 
+		    font-size: 2em;
+		    line-height: 1.125;
+		    max-width: 21.5em; /* 43/2 */
+		}
+	}
+	
+	@media only screen and (min-width: 56.25em) {
+	    h2 { 
+	    	font-size: 2.25em;
+		    line-height: 1.125;
+		    max-width: 19.11111111111111em; /* 43/2.25 */
+	    }
+	}
+	
+	@media only screen and (min-width: 81.25em) {
+	    h2 { 
+	    	font-size: 2.5em;
+		    line-height: 1.125;
+		    max-width: 19.35em; /* 43/2.5*1.125 */
+	    }
+	}
+
+h3 {
+	font-size: 1.3125em;
+	line-height: 1.25;
+	margin-top: 0.5em;
+	margin-bottom: 0.125em;
+}
+	@media only screen and (min-width: 25em) {
+	    h3 {
+		    font-size: 1.5em;
+		    line-height: 1.25;
+		}
+	}
+	
+	@media only screen and (min-width: 43.75em) {
+	    h3 { 
+		    font-size: 1.75em;
+		    line-height: 1.125;
+		    max-width: 24.57142857142857em; /* 43/1.75 */
+		}
+	}
+	
+	@media only screen and (min-width: 56.25em) {
+	    h3 { 
+	    	font-size: 1.875em;
+		    line-height: 1.125;
+		    max-width: 22.93333333333333em; /* 43/1.875 */
+	    }
+	}
+	
+	@media only screen and (min-width: 81.25em) {
+	    h3 { 
+	    	font-size: 2em;
+		    line-height: 1.125;
+		    max-width: 24.1875em; /* 43/2*1.125 */
+	    }
+	}
+
+h4 {
+	font-size: 1.25em;
+	line-height: 1.25;
+	margin-top: 0.5em;
+	margin-bottom: 0.125em;
+}
+	@media only screen and (min-width: 25em) {
+	    h4 {
+		    font-size: 1.25em;
+		    line-height: 1.25;
+		}
+	}
+	
+	@media only screen and (min-width: 43.75em) {
+	    h4 { 
+		    font-size: 1.375em;
+		    line-height: 1.125;
+		    max-width: 31.27272727272727em; /* 43/1.375 */
+		}
+	}
+	
+	@media only screen and (min-width: 56.25em) {
+	    h4 { 
+	    	font-size: 1.375em;
+		    line-height: 1.125;
+		    max-width: 31.27272727272727em; /* 43/1.375 */
+	    }
+	}
+	
+	@media only screen and (min-width: 81.25em) {
+	    h4 { 
+	    	font-size: 1.5em;
+		    line-height: 1.125;
+		    max-width: 32.25em; /* 43/1.5*1.125 */
+	    }
+	}
+
+h5 {
+	font-size: 1.125em;
+	line-height: 1.25;
+	margin-top: 0.5em;
+	margin-bottom: 0.25em;
+}
+	@media only screen and (min-width: 25em) {
+	    h5 {
+		    font-size: 1.125em;
+		    line-height: 1.25;
+		}
+	}
+	
+	@media only screen and (min-width: 43.75em) {
+	    h5 { 
+		    font-size: 1.25em;
+		    line-height: 1.125;
+		    max-width: 34.4em; /* 43/1.25 */
+		}
+	}
+	
+	@media only screen and (min-width: 56.25em) {
+	    h5 { 
+	    	font-size: 1.25em;
+		    line-height: 1.125;
+		    max-width: 34.4em; /* 43/1.25 */
+	    }
+	}
+	
+	@media only screen and (min-width: 81.25em) {
+	    h5 { 
+	    	font-size: 1.25em;
+		    line-height: 1.125;
+		    max-width: 38.7em; /* 43/1.25*1.125 */
+	    }
+	}
+
+h6 {
+	font-size: 1em;
+	line-height: 1.25;
+	margin-top: 0.5em;
+	margin-bottom: 0.25em;
+}
+	@media only screen and (min-width: 25em) {
+	    h6 {
+		    font-size: 1em;
+		    line-height: 1.25;
+		}
+	}
+	
+	@media only screen and (min-width: 43.75em) {
+	    h6 { 
+		    font-size: 1.125em;
+		    line-height: 1.125;
+		    max-width: 38.22222222222222em; /* 43/1.125 */
+		}
+	}
+	
+	@media only screen and (min-width: 56.25em) {
+	    h6 { 
+	    	font-size: 1.125em;
+		    line-height: 1.125;
+		    max-width: 38.22222222222222em; /* 43/1.125 */
+	    }
+	}
+	
+	@media only screen and (min-width: 81.25em) {
+	    h6 { 
+	    	font-size: 1.125em;
+		    line-height: 1.125;
+		    max-width: 43em; /* 43/1.5*1.125 */
+	    }
+	}
+
+
