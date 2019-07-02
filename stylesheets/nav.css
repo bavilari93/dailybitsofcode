@@ -58,7 +58,6 @@ nav img {
 
     flex-direction: row;
     align-items: center;
-    margin-top: 6rem;
     flex-wrap: wrap;
 
 
@@ -91,6 +90,7 @@ a {
 
 .hero {
     width: 100vw;
+    margin-top: 5rem;
     display: flex;
     flex-direction: row;
 
@@ -108,12 +108,171 @@ a {
     color: #bf2a87;;
 }
 
+
 .hero-header a {
        background: #bf2a87;;
     padding: 1.3rem 7rem;
     font-size: 2.5em;
     font-variant: small-caps;
     position: relative;
-    top: 2rem;
-        box-shadow: 5px 3px 21px #c15ca3;
+    top: 3rem;
+        
+}
+
+.hero-header a span{
+	color: white;
+	position: absolute;
+    right: 1rem;
+   
+}
+
+
+
+@media (max-width: 640px){
+    .navegation{
+        margin-top: 0;
+        font-size: x-large;
+
+    }
+   .hero {
+    flex-direction: column-reverse;
+    margin-top: 0;
+   } 
+   .hero-header a{
+    padding: 1.3rem 3rem;
+    font-size: 1.5em;
+   }
+
+   .hero-about>div{
+    margin: 2rem 2rem;
+   }
+   .why{
+    margin-top:5rem;
+   }
+   .challenge-header h1{
+    font-size: large;
+   }
+   .why div:nth-child(2){
+        width: min-content !@important;;
+   }
+}
+
+/* ==========================================================================
+        Hero About
+   ========================================================================== */
+.hero-about{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    margin-bottom: 10rem
+}
+.hero-about>*{
+    flex:1;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+        margin: 0 8rem;
+    margin-top: 4rem;
+    border-radius: 10px;
+    padding: 2rem;
+
+
+}
+.hero-about div:nth-child(1n){
+      background: aliceblue;
+
+}
+.hero-about div:nth-child(2n){
+      background: #f5f5f5;;
+}
+
+h3 span{
+        color: #bf2a87;
+
+}
+/* ==========================================================================
+        Hero Why
+   ========================================================================== */
+
+.why{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 30rem;
+        overflow: hidden;
+        margin-bottom: 15rem;
+
+}
+.why>div{
+
+width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.why div:nth-child(1){
+background-image: url(../img/free.png);
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+
+.why div:nth-child(2){
+        
+    border-right: solid 1rem black;
+    border-top: solid 1rem black;
+    border-bottom: solid 1rem black;
+    flex-wrap: wrap;
+        margin: 4rem -3rem;
+    position: absolute;
+    left: 35%;
+    height:auto;
+    padding-right: 3rem;
+    list-style: bengali;
+        width: auto;
+
+}
+
+.why div ul{
+    list-style: bengali;
+    
+   
+}
+.why li{
+ font-size: xx-large;
+}
+
+.challenge-header{
+text-align: center;
+}
+#challenge{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 15rem;
+
+}
+#challenge>div{
+    width: 500px;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+#challenge div img{
+    max-width: 400px;
+    height: 400px;
+}
+#challenge div a{
+        background: #4d1f8a;
+    width: 50%;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    font-size: 1.5em;
 }
