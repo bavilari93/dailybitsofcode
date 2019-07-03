@@ -137,7 +137,7 @@ h3 span{
     flex-direction: row;
     width: 100vw;
     height: 30rem;
-  
+      height: auto;
         margin-bottom: 17rem;
 
 }
@@ -325,7 +325,7 @@ footer{
     margin-top: 0;
    } 
    .hero-header a{
-    padding: 1.3rem 3rem;
+    padding: 1rem 2rem;
     font-size: 1.5em;
    }
 
@@ -335,15 +335,21 @@ footer{
    .why{
     margin-top:5rem;
     margin-bottom: 10rem;
+        overflow: hidden;
+    position: relative;
    }
    .challenge-header h1{
     font-size: x-large;
    }
    #challenge{
     margin: 0rem 0rem 10rem 0rem !important;
+    flex-wrap: wrap;
    }
    .why div:nth-child(2){
-        width: min-content !@important;;
+        width: -webkit-fill-available;
+   }
+   .btn{
+    padding: 0em .5em;
    }
 }
 
